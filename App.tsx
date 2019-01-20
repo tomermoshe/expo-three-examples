@@ -5,6 +5,7 @@ import { Button, View, Text } from 'react-native';
 // import './dom-parser'
 import './src/setup/three';
 import { Teapot } from './src/teapot/teapot';
+import { City } from './src/city/city';
 
 export default class App extends Component {
   state = { example: undefined };
@@ -15,6 +16,7 @@ export default class App extends Component {
         <Text style={{ fontSize: 20, margin: 20 }}>Choose an Example:</Text>
         {this.renderButton('Teapot')}
         {this.renderButton('Minecraft')}
+        {this.renderButton('City')}
       </View>
     ) : (
       <View style={{ flex: 1 }}>
@@ -35,4 +37,4 @@ export default class App extends Component {
   };
 }
 
-const examplesMap = new Map([['Teapot', <Teapot />], ['Minecraft', <Minecraft />]]);
+const examplesMap = new Map([['Teapot', <Teapot />], ['Minecraft', <Minecraft />], ['City', <City />]]);
