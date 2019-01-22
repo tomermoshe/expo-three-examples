@@ -2,7 +2,6 @@ import { GraphicsView } from 'expo-graphics';
 import ExpoTHREE, { CubeTexture, THREE } from 'expo-three';
 import './OrbitControls';
 import React, { Component } from 'react';
-import './teapot-buffer-geometry';
 import { withTouch } from '../touch/with-touche';
 
 const modelObj = require('../../assets/sirus_city.obj');
